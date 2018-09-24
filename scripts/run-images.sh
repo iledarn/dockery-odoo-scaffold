@@ -7,8 +7,6 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-source "${DIR}/../.env"
-
 if [ "$1" = '--pull' ]; then
     docker pull "${FROM}:${ODOO_VERSION}"
 fi
